@@ -13,7 +13,9 @@ declare message
 message=$(bashio::config 'message')
 
 ## Print the message the user supplied, defaults to "Hello World..."
-bashio::log.info "${message:="Hello World..."}"
+bashio::log.info "${message:="Hello Mediola2mqtt ..."}"
 
 ## Run your program
 # exec my_program --with-params
+# MP 22/04/2022
+python3 -u ./mediola2mqtt.py
